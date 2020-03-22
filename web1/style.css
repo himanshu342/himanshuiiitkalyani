@@ -1,0 +1,310 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+*{
+    box-sizing: border-box;
+}
+header,
+section{
+    overflow-x: hidden;
+}
+:root{
+    --Snigle-font:'Snigle',cursive;
+    --Rubik:'Rubik',cursive;
+    --Patua:'Patua One',cursive;
+    --Lobster:'Lobster',cursive;
+    --light-black:#2e2c2caf;
+    --bggradient:linear-gradient(to bottom,#f81b7f,#f12d06);
+    --light-gray:rgba(255,255,255,0);
+
+}
+header a{
+    font-family: var(--Snigle-font);
+    font-size: 1.2em;
+    color: wheat;
+}
+header{
+    background: #dd2476;
+    background: var(--bggradient);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: rgb(206, 10, 102);
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rbga(0,0,0,2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px,16px;
+    text-decoration: none;
+    display: block;
+
+}
+.dropdown-content a:hover{
+    background: rgb(250, 194, 110);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+header .nav-items:last-child{
+    padding-right: 10.5em;
+}
+header .nav-item{
+    padding: 0.9em;
+}
+header .navbar-brand{
+    padding-left:8rem;
+}
+header .nav-link:hover{
+    color: black;
+}
+header .row .col-md-5{
+    /* padding: 2vmin 1vmin; */
+    padding-top: 10px;
+}
+header .row .col-md-7{
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    padding-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+}
+header .row .col-md-5 img{
+    width: 90%;
+}
+header .container .col-md-7 h6{   
+    padding: 2vmin;
+    letter-spacing: 4px;
+}
+header .container .col-md-7 h1{   
+    font-size: 52px;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+header .container .col-md-7 p{   
+    padding: 1vmin;
+}
+header .container .col-md-7 button{   
+    border-radius: 30px;
+    font-weight: 500;
+    background-color:var(--bggradient);
+}
+header .container .col-md-7 button:hover{   
+    border-radius: 30px;
+    font-weight: 500;
+    background-color:wheat;
+}
+
+/* section 1 */
+.section1{
+    padding: 20vmin;
+    background: rgb(247, 237, 219);
+}
+.section1 .row .col-md-6 .pray img{
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 3px;
+
+}
+.section1 .row .col-md-6:last-child{
+    position: relative;
+}
+.section1 .row .col-md-6 .panel{
+    position: absolute;
+    top: 7vmin;
+    left: -120px;
+    background: wheat;
+    border-radius: 3px;
+    text-align: left;
+    padding: 9vmin 4vmin 11vmin 7vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 1;
+}
+.section1 .row .col-md-6 .panel h1{
+    font-weight: bold;
+    padding: 0.4em0;
+    font-size: 2em;
+}
+.section1 .row .col-md-6 .panel p{
+    font-size: 0.9em;
+    color:rgba(0.3,0.4,0.2,0.8);
+}
+
+
+/* section 2 */
+.cover{
+    width: 100%;
+    height: 52vmin;
+    background: url(image/portitem2.jpeg);
+    background-position: -15rem -12rem;
+    background-size: 120%;
+    position: relative;
+}
+.cover .content{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding-top:19vmin;
+
+}
+.cover .content h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+.cover .content p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5vmin;
+    color: #e5e5e5;
+}
+.numbers .rect{
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    width: 15rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    box-shadow: 1px 2px 50px 0px rgba(255,0,0,0.349);
+}
+.numbers{
+    margin-top: -15vmin;
+}
+.numbers .rect h1{
+    font-size: 5rem;
+    color: tomato;
+}
+.numbers .rect p{
+    font-size: large;
+    font-weight:bold;
+}
+.purchases h1{
+    padding-top: 4rem;
+    padding-bottom: 0.1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.purchases p{
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 10vmin;}
+.purchases .cards .card{
+    width: 22rem;
+    margin: 3vmin;
+}
+.cards div{
+    
+    padding: 0;
+    margin:0;
+}
+.card .title{
+    background:linear-gradient(to right,#f81b7f,#f12d06) ;
+    padding: 1.4rem 2.5rem;
+     font-size: 2vmin;
+}
+.card .card-text{
+    padding:2.5rem 3rem;
+    color: var(--light-black);
+}
+.card-body .pricing{
+    background: wheat;
+    border-radius: 20px;
+    border-top-left-radius: 170px;
+}
+.card-body .pricing h1{
+    font-size: 38px;
+    padding: 1em 0.5em;
+}
+.card-body .pricing a{
+   margin-bottom: 30px;
+   font-size: 22px;
+   background:linear-gradient(to right,#f81b7f,#f12d06) ;
+}
+.card-body .pricing a:hover{
+    margin-bottom: 30px;
+    font-size: 22px;
+    background:tomato ;
+ }
+
+ /* ---section 3 */
+ .section-3{
+     height: 65vmin;
+     margin-top:15vmin;
+     background:var(--bggradient);
+ }
+ .section-3 .col-md-12 h1{
+     padding: 2em 0 0.5em 0;
+    color: wheat;
+    font-size: 6vmin;
+    }
+.section-3 .col-md-12 p{
+        padding:0.4em;
+       font-size: 2em;
+      color: aliceblue;
+       font-size: 3vmin;
+       }
+.section-3 .desktop{
+    background: wheat;
+    display: inline-block;
+    border-radius: 3em;
+    padding:2vmin 4.5vmin ;
+    margin: 1em;
+    }
+.section-3 .desktop h3{
+    font-size: 4vmin;
+}
+.section-3 .desktop p{
+    font-size: 2vmin;
+}
+/* -------section 4--------- */
+.section-4 .container-fluid h1{
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+.section-4 .team{
+    padding: 10vmin 4vmin;
+}
+.section-4 .card{
+    width: 25rem;
+    margin-top: 5vmin;
+}
+.section-4 .card .card-text{
+    padding: 0.5em;
+
+}
+.section-4 .card .card-body a{
+    font-size: 1.5em;
+}
+.section-4 .carousel-item{
+    padding-left: 1rem;
+}
+.border-radius{
+    border-radius: 300px;
+    width: 65%;
+}
+/* foooooter */
+.footer{
+    background: rgba(0, 0, 0, 0.855);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+.footer p span{
+    color: #ff512f;
+}
+.footer input{
+    border: none !important;
+}
+.footer input::placeholder{
+    color: aliceblue !important;
+}
+.footer .input-group .input-group-text{
+    background: var(--bggradient);
+    border: none;
+}
+.footer .column |{
+    color: #dd2476;
+}
+.footer .column |+| {
+    padding:0 0.5em;
+}
